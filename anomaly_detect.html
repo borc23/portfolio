@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Anomaly Detection</title>
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+
+	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="default.css">
+
+
+	<style type="text/css">
+		.img-container{
+			max-width: 600px;
+		}
+
+		img{
+			width: 100%
+		}
+
+	</style>
+
+</head>
+<body>
+	<div class="nav-wrapper">
+
+		<!-- Link around dots-wrapper added after tutorial video -->
+		<a href="index.html">
+			<div class="dots-wrapper">
+				<div id="dot-1" class="browser-dot"></div>
+				<div id="dot-2" class="browser-dot"></div>
+				<div id="dot-3" class="browser-dot"></div>
+			</div>
+		</a>
+
+		<ul id="navigation">
+			<li><a href="index.html#contact">Contact</a></li>
+
+		</ul>
+	</div>
+
+	<div class="main-container">
+		<br>
+
+		<div class="img-container">
+			<img src="images/anomaly/anomaly.png">
+		</div>
+		
+		<h3>Anomaly Detection</h3>
+
+		<p>The goal of the final part is to identify errors in objects which are photographed with an X-Ray device.
+		<br>
+		<br>
+		At first, it was necessary to obtain images for a database with which we can start learning the machine for later predictions. With the help of my coworkers at INEA d.o.o. we captured these images from an X-Ray at Jožef Štefan Institute.
+		<br>
+		<br>
+		irst thing after using filters on these images which help us see it's details better and get better quality images, the masks had to be made, because we will be performing segmentation and it is necessary to indicate which area of the image is in our range of interest so that we can train the machine to predict it.
+		<br>
+		<br>
+		Customers had the ability to view all their data with a dynamic search form, trend data, add notes to reports and even map their samples' physical location.
+		<br>
+		<br>
+		The model used for this project is U-Net, because it is shown that it has one of the best accuracies of prediction for image segmentation. This was also seen in the results of training process and later shown when predictions were made.
+		<br>
+		<br>
+		The results of predictions were quite successful in the end, but they could have been even better if a larger image database was used to train the model. Moreover, due to the difficulty of images the results were not as accurate, but still in acceptable range.
+		<br>
+		<br>Loss was getting lower and lower with each iteration in training which led us to knowing that the model is successfully training on the given data.</p>
+
+		<h5>Technologies:</h5>
+		<ul>
+			<li>- Python</li>
+			<li>- C++</li>
+			<li>- LabView</li>
+			<li>- PyTorch</li>
+			<li>- Image preproccessing</li>
+			<li>- UNet</li>
+		</ul>
+
+
+		<h5>Our Goal</h5>
+		<div class="img-container">
+			<img src="images/anomaly/goal.png">
+		</div>
+
+		<h5>X-Ray Image Capture</h5>
+		<div class="img-container">
+			<img src="images/anomaly/capture.png">
+		</div>
+
+		<h5>Raw & Processed</h5>
+		<div class="img-container">
+			<img src="images/anomaly/raw.png">
+			<img src="images/anomaly/processed.png">
+		</div>
+
+		<h5>Results</h5>
+		<div class="img-container">
+			<img src="images/anomaly/results.png">
+		</div>
+
+	</div>
+
+</body>
+</html>
